@@ -24,10 +24,25 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
+      .when('/myproducts', {
+        templateUrl: 'views/myproducts.html',
+        controller: 'MyproductsCtrl',
+        controllerAs: 'myproducts'
+      })
+      .when('/transactions', {
+        templateUrl: 'views/transactions.html',
+        controller: 'TransactionsCtrl',
+        controllerAs: 'transactions'
+      })
+      .when('/login', {
+        templateUrl: 'views/login.html',
+        controller: 'LoginCtrl',
+        controllerAs: 'login'
+      })
+      .when('/register', {
+        templateUrl: 'views/register.html',
+        controller: 'RegisterCtrl',
+        controllerAs: 'register'
       })
       .otherwise({
         redirectTo: '/'
