@@ -1,1 +1,12 @@
 <p>My products.</p>
+<a ng-href="#/newproduct">Add new product</a>
+<div class="main all_products">
+	<div ng-repeat="(key, value) in products" class="product">
+		<div class="img"><img src="images/product_emply.png" alt="" /></div>
+		<div class="content">
+			<h2>{{ value.name }}</h2>
+			<p>{{ value.description }}</p>
+			<a href="" ng-click="singleProduct( value.id )" >See more</a>
+		</div>
+	</div>
+</div>

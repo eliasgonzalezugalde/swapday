@@ -1,0 +1,17 @@
+<p>Single product</p>
+<div class="main all_products">
+  <div class="product">
+    <div class="img"><img src="images/product_emply.png" alt="" /></div>
+    <div class="content">
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.description }}</p>
+        <div ng-if="$root.myproducts == 'true'">
+            <a ng-click="deleteProduct(product.id)">Remove</a>
+            <a ng-click="editProduct(product.id)">Edit</a>
+        </div>
+        <div ng-if="$root.myproducts == 'false'">
+            <a ng-click="iWantIt(product.id)">I want it</a>
+        </div>
+    </div>
+</div>
+</div>

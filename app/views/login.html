@@ -1,16 +1,17 @@
 <div class="login">
   <img src="images/logo.png" alt="" />
-      <form action="/" method="post">
-        <div class="form-group">
-  <label for="usr">Name:</label>
-  <input type="text" class="form-control" id="usr">
-</div>
-<div class="form-group">
-  <label for="pwd">Password:</label>
-  <input type="password" class="form-control" id="pwd">
-</div>
-
-      <input class="btn_login" type="submit" value="Log In">
-      <p class="btn_register"><a ng-href="#/register">Register</a></p>
-      </form>
+  <form ng-submit="new()">
+    <div class="form-group">
+      <label for="usr">Name:</label>
+      <input type="text" class="form-control" ng-model="user.username">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" ng-model="user.password">
+    </div>
+    <div class="button-container">
+      <button><span>Go</span></button>
+    </div>
+    <p class="btn_register"><a ng-href="#/register">Register</a></p>
+  </form>
 </div>

@@ -1,1 +1,24 @@
-<p>Transactions.</p>
+<p>People want your products - required transactions.</p>
+<div class="main all_products">
+		<div class="reqs">
+			<div ng-repeat="(key, value) in products_req" class="products_req">
+			<p>My product</p>
+				<p>nombre: {{ value.name }}</p>
+				<p>id: {{ value.id }}</p>
+			</div>
+		</div>
+		<div class="offs">
+			<div ng-repeat="(key, value) in products_offe" class="products_offe">
+			<p>Offered product</p>
+				<p>nombre: {{ value.name }}</p>
+				<p>id: {{ value.id }}</p>
+			</div>
+		</div>
+	<div ng-repeat="(key, value) in transactions" class="transaction">
+		<div class="transaction_content">
+			<p>Producto requerido: {{ value.product_req_id }} - Producto ofrecido: {{ value.product_offered_id }}</p>
+			<!--p>Someone wants to swap your: <span>{{ value.name }}</span> for the <span>{{ value.name }}</span> of him</p-->
+		</div>
+	</div>
+
+</div>
